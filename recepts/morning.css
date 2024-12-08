@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 20%; 
+    height: 100vh; 
+    background-color: #F7E6C4; 
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+.main-content {
+  display: flex; /* Використовуємо flexbox для вирівнювання */
+  flex-wrap: wrap; /* Дозволяємо переносити елементи на новий рядок */
+  gap: 10px; /* Відстань між картками */
+  justify-content: flex-start; /* Вирівнюємо елементи по лівому краю */
+}
+
+.sp {
+    text-decoration: none;
+}
+
+.cart {
+    display: flex; /* Використовуємо flex для розташування картинки і тексту */
+    flex-direction: column; /* Картинка зверху, текст знизу */
+    width: 200px; /* Ширина картки */
+    height: 300px; /* Висота картки */
+    text-decoration: none; /* Відключаємо підкреслення посилання */
+    color: black; /* Колір тексту */
+    align-items: center; /* Вирівнюємо вміст по центру */
+    margin: 25px;
+}
+
+.cart-image {
+    width: 100%; /* Картинка займає всю ширину картки */
+    height: 200px; /* Висота картинки */
+    object-fit: cover; /* Перетворюємо картинку так, щоб вона заповнила область */
+}
+
+.cart-title {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+
+}
